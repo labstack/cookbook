@@ -1,0 +1,32 @@
+{{ partial "head.html" . }}
+<body class="diy">
+  {{ partial "topnav.html" . }}
+  <div class="w3-content">
+    <div class="main">
+      <div class="w3-row-padding">
+        <div class="w3-col s12 m10 l10">
+          <article class="content">
+            <section>
+              <h1>{{ .Title }}</h1>
+              {{ .Content }}
+            </section>
+            <footer>
+              Caught a mistake?
+              <a 
+                href="https://github.com/labstack/diy/blob/master/website/content/{{ .File.Path }}">
+                <i class="far fa-edit"></i> Edit this page on GitHub!
+              </a>
+              <hr>
+              <h2>
+                <a href="https://forum.labstack.com">Forum</a> ✧
+                <a href="https://gitter.im/labstack/diy">Chat</a>
+              </h2>
+            </footer>
+          </article>
+        </div>
+      </div>
+	    {{ partial "footer.html" . }}
+    </div>
+  </div>
+</body>
+</html>
