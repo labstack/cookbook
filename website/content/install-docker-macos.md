@@ -11,6 +11,13 @@ title: "Install Docker macOS"
 
 ### Step 1: Install Docker Engine
 
+#### Binary
+
+- Download https://download.docker.com/mac/stable/Docker.dmg
+- Open downloaded Docker.dmg and drag Docker to Applications
+
+#### Homebrew
+
 ```sh
 brew cask install docker
 ```
