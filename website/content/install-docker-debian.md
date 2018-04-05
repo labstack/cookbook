@@ -32,7 +32,7 @@ sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/dock
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-### Step 3: Test Installation
+### Step 3: Verify Installation
 
 ```sh
 docker run hello-world

@@ -26,7 +26,7 @@ sudo reboot
 pip install docker-compose
 ```
 
-### Step 3: Test Installation
+### Step 3: Verify Installation
 
 ```sh
 docker run hello-world

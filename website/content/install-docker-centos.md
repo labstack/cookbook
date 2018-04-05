@@ -7,7 +7,7 @@ title: "Install Docker CentOS"
 
 <span class="w3-tag w3-green">centos 7, 64-bit</span> 
 
-### Step 2: Install Docker Engine
+### Step 1: Install Docker Engine
 
 ```sh
 sudo yum install -y yum-utils
@@ -27,7 +27,7 @@ sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/dock
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-### Step 3: Test Installation
+### Step 3: Verify Installation
 
 ```sh
 docker run hello-world
