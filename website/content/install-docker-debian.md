@@ -1,5 +1,5 @@
 ---
-title: "Install Docker Debian"
+title: Install Docker Debian
 ---
 
 <img src="/images/docker.png" height="100">
@@ -7,7 +7,7 @@ title: "Install Docker Debian"
 
 <span class="w3-tag w3-green">debian 9, 64-bit</span> 
 
-### Step 1: Install Docker Engine
+## Step 1: Install Docker Engine
 
 ```sh
 apt-get install -y sudo
@@ -24,7 +24,7 @@ sudo apt-get install -y docker-ce
 sudo usermod -aG docker $USER # Add current user to the "docker" group
 ```
 
-### Step 2: Install Docker Compose
+## Step 2: Install Docker Compose
 
 ```sh
 VERSION=1.20.1
@@ -32,7 +32,7 @@ sudo curl -L https://github.com/docker/compose/releases/download/${VERSION}/dock
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-### Step 3: Verify Installation
+## Step 3: Verify installation
 
 ```sh
 docker run hello-world

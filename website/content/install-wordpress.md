@@ -1,5 +1,5 @@
 ---
-title: "Install WordPress"
+title: Install WordPress
 ---
 
 <img src="/images/wordpress.png" height="100">
@@ -28,6 +28,6 @@ docker-compose up -d
 
 Browse to public IP of the machine and continue with the installation
 
-## Step 5: Setup Domain
+## Step 5: Setup domain
 
 ...

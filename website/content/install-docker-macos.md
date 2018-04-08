@@ -1,5 +1,5 @@
 ---
-title: "Install Docker macOS"
+title: Install Docker macOS
 ---
 
 <img src="/images/docker.png" height="100">
@@ -9,24 +9,24 @@ title: "Install Docker macOS"
 <span class="w3-tag w3-green">macos 10.12, 64-bit</span>
 <span class="w3-tag w3-green">macos 10.13, 64-bit</span>
 
-### Step 1: Install Docker Engine
+## Step 1: Install Docker Engine
 
-#### Binary
+### Binary
 
 - Download https://download.docker.com/mac/stable/Docker.dmg
 - Open downloaded Docker.dmg and drag Docker to Applications
 
-#### Homebrew
+### Homebrew
 
 ```sh
 brew cask install docker
 ```
 
-### Step 2: Start Docker Engine
+## Step 2: Start Docker Engine
 
 Search for `Docker.app` and open it
 
-### Step 3: Verify Installation
+## Step 3: Verify installation
 
 ```sh
 docker run hello-world
