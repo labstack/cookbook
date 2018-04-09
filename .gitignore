@@ -2,3 +2,4 @@ public
 apache2
 mysql
 .DS_Store
+*.db

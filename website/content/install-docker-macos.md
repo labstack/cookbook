@@ -24,7 +24,7 @@ brew cask install docker
 
 ## Step 2: Start Docker Engine
 
-Search for `Docker.app` and open it
+Search for "Docker.app" and open it
 
 ## Step 3: Verify installation
 

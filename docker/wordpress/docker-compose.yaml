@@ -12,10 +12,17 @@ services:
       - mysql
     image: wordpress
     restart: always
+    volumes:
+      - ./apache2:/var/www/html
+  armor:
+    depends_on: 
+      - apache2
+    image: labstack/armor:0.4.5 
+    restart: always
     ports:
       - 80:80
     volumes:
-      - ./apache2:/var/www/html
+      - ./armor:/root/.armor
     environment:
       WORDPRESS_DB_PASSWORD: L@bSt@ck!
 

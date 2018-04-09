@@ -23,7 +23,7 @@ choco install -y docker-for-windows
 
 ## Step 3: Start Docker Engine
 
-Search for `Docker` and open it
+Search for "Docker" and open it
 
 ## Step 4: Verify installation
 
