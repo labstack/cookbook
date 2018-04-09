@@ -10,7 +10,6 @@ title: Install Docker Ubuntu
 ## Step 1: Install Docker Engine
 
 ```sh
-curl https://download.docker.com/linux/ubuntu/dists/artful/pool/stable/amd64/docker-ce_18.03.0~ce-0~ubuntu_amd64.deb
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \

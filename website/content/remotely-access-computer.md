@@ -8,13 +8,13 @@ title: Remotely Access Computer
 
 Most of the OS are already running an SSH server, so I will only focus on a few systems
 
-### Windows
+### Windows {#install-ssh-server-windows}
 
 ```sh
 choco install -y -params "/SSHServerFeature" openssh
 ```
 
-### Raspberry Pi
+### Raspberry Pi {#install-ssh-server-raspberry-pi}
 
 Enable and start SSH
 
@@ -31,7 +31,7 @@ passwd
 
 ## Step 2: Install VNC server
 
-### Windows
+### Windows {#install-vnc-server-windows}
 
 ```sh
 choco install -y tightvnc
@@ -39,7 +39,7 @@ choco install -y tightvnc
 
 Open "TightVNC Service" from taskbar, go to Server tab, check "Require VNC authentication" and set primary password
 
-### Raspberry Pi
+### Raspberry Pi {#install-vnc-server-raspberry-pi}
 
 ```sh
 sudo apt-get update
@@ -48,7 +48,7 @@ sudo apt install -y realvnc-vnc-server
 
 Go to "Menu > Preferences > Raspberry Pi Configuration > Interfaces" and ensure VNC is enabled.
 
-### MacOS
+### MacOS {#install-vnc-server-macos}
 
 Go to "System Preferences > Sharing" and ensure Screen Sharing is checked.
 
@@ -57,7 +57,7 @@ Go to "System Preferences > Sharing" and ensure Screen Sharing is checked.
 At this point, SSH and VNC ports are only accessible on your local network,
 to make it accessible over the internet we will create secured tunnels.
 
-### SSH
+### SSH {#create-tunnels-ssh}
 
 ```sh
 ssh -R 0:localhost:22 labstack.me
@@ -65,7 +65,7 @@ ssh -R 0:localhost:22 labstack.me
 
 If you don't already have an RSA key pair use `ssh-keygen` command to generate one
 
-### VNC
+### VNC {#create-tunnels-vnc}
 
 ```sh
 ssh -R 0:localhost:5900 labstack.me
@@ -77,12 +77,12 @@ ssh -R 0:localhost:5900 labstack.me
 
 From another computer with SSH and VNC clients
 
-### SSH
+### SSH {#verify-access-ssh}
 
 ```sh
 ssh <REMOTE_USER>@<ASSIGNED_HOST> -p <ASSIGNED_PORT>
 ```
 
-### VNC
+### VNC {#verify-access-vnc}
 
 Use `<ASSIGNED_HOST>` and `<ASSIGNED_PORT>` to connect to your computer

@@ -10,10 +10,12 @@ services:
   apache2:
     depends_on: 
       - mysql
-    image: wordpress
+    image: wordpress:4.9.4
     restart: always
     volumes:
       - ./apache2:/var/www/html
+    environment:
+      WORDPRESS_DB_PASSWORD: L@bSt@ck!
   armor:
     depends_on: 
       - apache2
@@ -23,6 +25,3 @@ services:
       - 80:80
     volumes:
       - ./armor:/root/.armor
-    environment:
-      WORDPRESS_DB_PASSWORD: L@bSt@ck!
-
