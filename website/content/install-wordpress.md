@@ -9,11 +9,11 @@ title: Install WordPress
 
 ## Stack
 
-- Armor `0.4.5` 
+- Armor `0.4.5`
   - Proxy server
   - Automatically installs SSL/TLS certificate from [Let’s Encrypt](https://letsencrypt.org)
 - WordPress `4.9.4`
-- MySQL
+- MySQL `5.7`
 
 ## Step 1: Provision a machine
 

@@ -1,3 +1,7 @@
 baseURL = "https://diy.labstack.com/"
 languageCode = "en-us"
 title = "DIY (Do it yourself) - LabStack"
+googleAnalytics = "UA-51208124-11"
+[params]
+  description = "DIY (Do it yourself) - LabStack"
+
