@@ -1,7 +1,0 @@
-baseURL = "https://diy.labstack.com/"
-languageCode = "en-us"
-title = "LabStack - DIY"
-googleAnalytics = "UA-51208124-11"
-[params]
-  description = "DIY deliver articles and tips to self-host software"
-
