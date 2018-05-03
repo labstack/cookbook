@@ -1,11 +1,9 @@
 ---
 title: Install WordPress
+image: wordpress-docker.png
 ---
 
 ### How to self-host WordPress with free SSL/TLS certificate and practically no limits on visits/month or bandwidth?
-
-<img src="/images/wordpress.png" height="100">
-<img src="/images/docker.png" height="100">
 
 ## Stack
 

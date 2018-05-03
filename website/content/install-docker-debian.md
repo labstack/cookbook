@@ -1,9 +1,7 @@
 ---
-title: Install Docker Debian
+title: Install Docker on Debian
+image: docker-debian.png
 ---
-
-<img src="/images/docker.png" height="100">
-<img src="/images/debian.png" height="100">
 
 <span class="w3-tag w3-green">debian 9, 64-bit</span> 
 

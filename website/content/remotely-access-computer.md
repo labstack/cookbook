@@ -1,5 +1,6 @@
 ---
 title: Remotely Access Computer
+image: remote-computer.png
 ---
 
 ### How to access a remote computer (Windows, MacOS, Linux, Raspberry Pi, etc.) via SSH or VNC?
@@ -8,13 +9,13 @@ title: Remotely Access Computer
 
 Most of the OS are already running an SSH server, so I will only focus on a few systems
 
-### Windows {#install-ssh-server-windows}
+### Windows
 
 ```sh
 choco install -y -params "/SSHServerFeature" openssh
 ```
 
-### Raspberry Pi {#install-ssh-server-raspberry-pi}
+### Raspberry Pi
 
 Enable and start SSH
 
@@ -31,7 +32,7 @@ passwd
 
 ## Step 2: Install VNC server
 
-### Windows {#install-vnc-server-windows}
+### Windows
 
 ```sh
 choco install -y tightvnc
@@ -39,7 +40,7 @@ choco install -y tightvnc
 
 Open "TightVNC Service" from taskbar, go to Server tab, check "Require VNC authentication" and set primary password
 
-### Raspberry Pi {#install-vnc-server-raspberry-pi}
+### Raspberry Pi
 
 ```sh
 sudo apt-get update
@@ -48,7 +49,7 @@ sudo apt install -y realvnc-vnc-server
 
 Go to "Menu > Preferences > Raspberry Pi Configuration > Interfaces" and ensure VNC is enabled.
 
-### MacOS {#install-vnc-server-macos}
+### MacOS
 
 Go to "System Preferences > Sharing" and ensure Screen Sharing is checked.
 
@@ -57,7 +58,7 @@ Go to "System Preferences > Sharing" and ensure Screen Sharing is checked.
 At this point, SSH and VNC ports are only accessible on your local network,
 to make it accessible over the internet we will create secured tunnels.
 
-### SSH {#create-tunnels-ssh}
+### SSH
 
 ```sh
 ssh -R 0:localhost:22 labstack.me
@@ -65,7 +66,7 @@ ssh -R 0:localhost:22 labstack.me
 
 If you don't already have an RSA key pair use `ssh-keygen` command to generate one
 
-### VNC {#create-tunnels-vnc}
+### VNC
 
 ```sh
 ssh -R 0:localhost:5900 labstack.me
@@ -77,12 +78,12 @@ ssh -R 0:localhost:5900 labstack.me
 
 From another computer with SSH and VNC clients
 
-### SSH {#verify-access-ssh}
+### SSH
 
 ```sh
 ssh <REMOTE_USER>@<ASSIGNED_HOST> -p <ASSIGNED_PORT>
 ```
 
-### VNC {#verify-access-vnc}
+### VNC
 
 Use `<ASSIGNED_HOST>` and `<ASSIGNED_PORT>` to connect to your computer

@@ -1,9 +1,7 @@
 ---
-title: Install Docker CentOS
+title: Install Docker on CentOS
+image: docker-centos.png
 ---
-
-<img src="/images/docker.png" height="100">
-<img src="/images/centos.svg" height="100">
 
 <span class="w3-tag w3-green">centos 7, 64-bit</span> 
 

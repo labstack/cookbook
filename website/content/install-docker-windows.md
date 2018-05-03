@@ -1,19 +1,17 @@
 ---
-title: "Install Docker Windows"
+title: Install Docker on Windows
+image: docker-windows.png
 ---
-
-<img src="/images/docker.png" height="100">
-<img src="/images/windows.svg" height="100">
 
 <span class="w3-tag w3-green">windows 10, 64-bit</span>
 
 ## Step 1: Install Docker Engine
 
-### Binary
+### Via Binary
 
 Download and run https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
 
-### Chocolatey
+### Via [Chocolatey](https://chocolatey.org)
 
 ```sh
 choco install -y docker-for-windows

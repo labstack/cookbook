@@ -1,11 +1,9 @@
 ---
-title: Install Docker Raspberry Pi
+title: Install Docker on Raspberry Pi
+image: docker-raspberry-pi.png
 ---
 
-<img src="/images/docker.png" height="100">
-<img src="/images/raspberry-pi.png" height="100">
-
-<span class="w3-tag w3-green">raspbian, 9, armv7l</span> 
+<span class="w3-tag w3-green">raspbian 9, armv7l</span> 
 
 ## Step 1: Install Docker Engine
 

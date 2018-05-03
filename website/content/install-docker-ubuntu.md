@@ -1,9 +1,7 @@
 ---
-title: Install Docker Ubuntu
+title: Install Docker on Ubuntu
+image: docker-ubuntu.png
 ---
-
-<img src="/images/docker.png" height="100">
-<img src="/images/ubuntu.png" height="100">
 
 <span class="w3-tag w3-green">ubuntu 16.04, 64-bit</span> 
 

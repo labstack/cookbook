@@ -1,5 +1,6 @@
 ---
 title: Instant File Sharing
+image: file-sharing.png
 ---
 
 ### How to instantly share files from your computer with anyone in the world?
