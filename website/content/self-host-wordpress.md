@@ -1,5 +1,5 @@
 ---
-title: Install WordPress
+title: Self Host WordPress
 image: wordpress-docker.png
 ---
 
@@ -7,7 +7,7 @@ image: wordpress-docker.png
 
 ## Stack
 
-- Armor `0.4.5`
+- Armor `0.4.11`
   - Proxy server
   - Automatically installs SSL/TLS certificate from [Let’s Encrypt](https://letsencrypt.org)
 - WordPress `4.9.4`
@@ -43,7 +43,6 @@ image: wordpress-docker.png
 ## Step 4: Start services
 
 ```sh
-cd /opt/wordpress
 docker-compose up -d
 ```
 
@@ -51,9 +50,10 @@ docker-compose up -d
 
 1. If you don't already have a domain, register one {{< domain >}}
 2. Go to you domain's DNS management console and create an `A` record with name `@` and value `<PUBLIC_IP>`
-3. Browse to your `<DOMAIN>` and continue with the setup
 
+## Step 6: Complete setup
 
+1. Browse to your `<DOMAIN>` and continue with the setup
 
 ## Step 6: Setup backup
 

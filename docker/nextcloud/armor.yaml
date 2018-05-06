@@ -1,0 +1,12 @@
+address: :80
+tls:
+  address: :443
+  auto: true
+plugins:
+- name: https-redirect
+hosts:
+  <DOMAIN>:
+    plugins:
+    - name: proxy
+      targets:
+      - url: http://apache2

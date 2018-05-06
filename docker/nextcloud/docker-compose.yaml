@@ -10,12 +10,10 @@ services:
   apache2:
     depends_on: 
       - mysql
-    image: wordpress:4.9.4
+    image: nextcloud:12.0.7
     restart: always
     volumes:
       - ./www:/var/www/html
-    environment:
-      WORDPRESS_DB_PASSWORD: L@bSt@ck!
   armor:
     depends_on: 
       - apache2
