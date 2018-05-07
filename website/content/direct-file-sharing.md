@@ -3,7 +3,7 @@ title: Direct File Sharing
 image: direct-file-sharing.png
 ---
 
-### How to instantly share files from your computer with anyone in the world?
+### *How to instantly share files from your computer with anyone in the world?*
 
 ## Step 1: Install Armor
 

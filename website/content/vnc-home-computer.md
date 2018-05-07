@@ -3,7 +3,7 @@ title: VNC Home Computer
 image: vnc-home-computer.png
 ---
 
-### How to access a home or remote computer over the internet via VNC?
+### *How to access a home or remote computer over the internet via VNC?*
 
 ## Step 1: Install VNC server
 

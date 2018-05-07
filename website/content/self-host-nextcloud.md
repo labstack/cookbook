@@ -3,14 +3,14 @@ title: Self Host Nextcloud
 image: nextcloud-docker.png
 ---
 
-### How to self-host Nextcloud and take control of your data?
+### *How to self-host Nextcloud with free SSL/TLS certificate?*
 
 ## Stack
 
-- Armor `0.4.11`
+- [Armor](https://armor.labstack.com) `0.4.11`
   - Proxy server
   - Automatically installs SSL/TLS certificate from [Let’s Encrypt](https://letsencrypt.org)
-- Nextcloud `12.0.7`
+- [Nextcloud](https://nextcloud.com) `12.0.7`
 - MySQL `5.7`
 
 ## Step 1: Provision a machine
@@ -34,7 +34,7 @@ image: nextcloud-docker.png
 
     {{< embed "docker/nextcloud/armor.yaml" >}}
 
-    Replace `<DOMAIN>` with your domain
+    > Replace `<DOMAIN_NAME>` with your value
 
 3. Create a file `docker-compose.yaml` with the following content:
 
@@ -53,7 +53,7 @@ docker-compose up -d
 
 ## Step 6: Complete setup
 
-1. Browse to your `<DOMAIN>` to continue with the setup
+1. Browse to `http//:<DOMAIN_NAME>` to continue with the setup
 2. Pick a username and password for admin account
 3. Setup database<br>
     <img src="/images/nextcloud-setup.png" width="50%">

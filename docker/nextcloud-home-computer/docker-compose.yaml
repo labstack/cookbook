@@ -1,0 +1,24 @@
+version: "3.6"
+services:
+  mysql:
+    image: mysql:5.7
+    restart: always
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: L@bSt@ck!
+  apache2:
+    depends_on: 
+      - mysql
+    image: nextcloud:12.0.7
+    restart: always
+    volumes:
+      - ./www:/var/www/html
+  tunnel:
+    depends_on: 
+      - apache2
+    image: labstack/tunnel:0.2.8
+    command: --name <CONFIG_NAME> apache2:80 
+    restart: always
+    volumes:
+      - ./tunnel.yaml:/root/.tunnel.yaml

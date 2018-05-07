@@ -1,5 +1,5 @@
 ---
-title: Install Docker on on macOS
+title: Install Docker on macOS
 image: docker-macos.png
 ---
 

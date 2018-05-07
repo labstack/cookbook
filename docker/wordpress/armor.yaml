@@ -5,7 +5,7 @@ tls:
 plugins:
 - name: https-redirect
 hosts:
-  <DOMAIN>:
+  <DOMAIN_NAME>:
     plugins:
     - name: proxy
       targets:

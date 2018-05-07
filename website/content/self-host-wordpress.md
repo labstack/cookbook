@@ -3,14 +3,14 @@ title: Self Host WordPress
 image: wordpress-docker.png
 ---
 
-### How to self-host WordPress with free SSL/TLS certificate and practically no limits on visits/month or bandwidth?
+### *How to self-host WordPress with free SSL/TLS certificate and practically no limits on visits/month or bandwidth?"*
 
 ## Stack
 
-- Armor `0.4.11`
+- [Armor](https://armor.labstack.com) `0.4.11`
   - Proxy server
   - Automatically installs SSL/TLS certificate from [Let’s Encrypt](https://letsencrypt.org)
-- WordPress `4.9.4`
+- [WordPress](https://wordpress.com) `4.9.4`
 - MySQL `5.7`
 
 ## Step 1: Provision a machine
@@ -34,7 +34,7 @@ image: wordpress-docker.png
 
     {{< embed "docker/wordpress/armor.yaml" >}}
 
-    Replace `<DOMAIN>` with your domain
+    > Replace `<DOMAIN_NAME>` with your value
 
 3. Create a file `docker-compose.yaml` with the following content:
 
@@ -53,7 +53,7 @@ docker-compose up -d
 
 ## Step 6: Complete setup
 
-1. Browse to your `<DOMAIN>` and continue with the setup
+1. Browse to `http//:<DOMAIN_NAME>` and continue with the setup
 
 ## Step 6: Setup backup
 

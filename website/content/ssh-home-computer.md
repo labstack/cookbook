@@ -3,7 +3,7 @@ title: SSH Home Computer
 image: ssh-home-computer.png
 ---
 
-### How to access a home or remote computer over the internet via SSH?
+### *How to access a home or remote computer over the internet via SSH?*
 
 ## Step 1: Install SSH server
 
