@@ -10,15 +10,16 @@ services:
   apache2:
     depends_on: 
       - mysql
-    image: nextcloud:12.0.7
+    image: nextcloud:13.0.2
     restart: always
     volumes:
       - ./www:/var/www/html
   tunnel:
     depends_on: 
       - apache2
-    image: labstack/tunnel:0.2.8
+    image: labstack/tunnel:0.2.9
     command: --name <CONFIG_NAME> apache2:80 
     restart: always
     volumes:
-      - ./tunnel.yaml:/root/.tunnel.yaml
+      - ./tunnel:/root/.tunnel
+

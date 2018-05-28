@@ -1,16 +1,16 @@
 ---
-title: Self Host Nextcloud 
-image: nextcloud-docker.png
+title: Self Host Nextcloud on Cloud 
+image: nextcloud-cloud.png
 ---
 
-### *How to self-host Nextcloud with free SSL/TLS certificate?*
+### *How to self-host Nextcloud on cloud with a free SSL/TLS certificate?*
 
 ## Stack
 
 - [Armor](https://armor.labstack.com) `0.4.11`
   - Proxy server
   - Automatically installs SSL/TLS certificate from [Let’s Encrypt](https://letsencrypt.org)
-- [Nextcloud](https://nextcloud.com) `12.0.7`
+- [Nextcloud](https://nextcloud.com) `13.0.2`
 - MySQL `5.7`
 
 ## Step 1: Provision a machine
@@ -26,8 +26,8 @@ image: nextcloud-docker.png
 1. Create directories
 
     ```sh
-    mkdir -p /opt/nextcloud/armor
-    cd /opt/nextcloud
+    mkdir -p ~/nextcloud/armor
+    cd ~/nextcloud
     ```
 
 2. Create a file `armor/config.yaml` with the following content:
@@ -65,6 +65,6 @@ docker-compose up -d
 ### View logs
 
 ```sh
-cd /opt/nextcloud
+cd ~/nextcloud
 docker-compose logs -f
 ```

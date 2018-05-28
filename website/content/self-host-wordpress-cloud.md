@@ -1,9 +1,9 @@
 ---
-title: Self Host WordPress
-image: wordpress-docker.png
+title: Self Host WordPress on Cloud
+image: wordpress-cloud.png
 ---
 
-### *How to self-host WordPress with free SSL/TLS certificate and practically no limits on visits/month or bandwidth?"*
+### *How to self-host WordPress with free a SSL/TLS certificate and practically no limits on visits/month or bandwidth?"*
 
 ## Stack
 
@@ -26,8 +26,8 @@ image: wordpress-docker.png
 1. Create directories
 
     ```sh
-    mkdir -p /opt/wordpress/armor
-    cd /opt/wordpress
+    mkdir -p ~/wordpress/armor
+    cd ~/wordpress
     ```
 
 2. Create a file `armor/config.yaml` with the following content:
@@ -64,6 +64,6 @@ TBD
 ### View logs
 
 ```sh
-cd /opt/wordpress
+cd ~/wordpress
 docker-compose logs -f
 ```

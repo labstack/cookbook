@@ -1,32 +1,32 @@
 ---
 title: Self Host Nextcloud on a Home Computer 
-image: nextcloud-docker-computer.png
+image: nextcloud-home-computer.png
 ---
 
 ### *How to self-host Nextcloud on a home computer and securely access it via internet?*
 
 ## Stack
 
-- [Tunnel](https://labstack.com#tunnel) `0.2.8`
-- [Nextcloud](https://nextcloud.com) `12.0.7`
+- [Tunnel](https://labstack.com#tunnel) `0.2.9`
+- [Nextcloud](https://nextcloud.com) `13.0.2`
 - MySQL `5.7`
 
 ## Step 1: Install Docker
 
 {{< docker >}}
 
-## Step 2: Register a subdomain at https://labstack.comm/tunnel/configs
+## Step 2: Register a subdomain at https://labstack.com/tunnel/configs
 
 ## Step 3: Configure
 
 1. Create directory
 
     ```sh
-    mkdir /opt/nextcloud
-    cd /opt/nextcloud
+    mkdir -p ~/nextcloud/tunnel
+    cd ~/nextcloud
     ```
 
-2. Create a file `tunnel.yaml` with the following content:
+2. Create a file `tunnel/config.yaml` with the following content:
 
     {{< embed "docker/nextcloud-home-computer/tunnel.yaml" >}}
 
@@ -58,6 +58,6 @@ docker-compose up -d
 ### View logs
 
 ```sh
-cd /opt/nextcloud
+cd ~/nextcloud
 docker-compose logs -f
 ```

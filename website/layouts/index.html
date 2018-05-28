@@ -7,9 +7,9 @@
       {{ range .Data.Pages }}
         <div class="w3-col s12 m4 l3">
           <a href="{{ substr .Permalink 0 -1 }}">
-            <div style="min-height: 250px; margin-bottom: 16px;" class="w3-container w3-card">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 250px; margin-bottom: 16px;" class="w3-container w3-card">
               <h3>{{ .Title }}</h3>
-              <img src="/images/{{ .Params.image }}">
+              <img class="w3-image" src="/images/{{ .Params.image }}">
             </div>
           </a>
         </div>

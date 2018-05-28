@@ -10,7 +10,7 @@ services:
   apache2:
     depends_on: 
       - mysql
-    image: nextcloud:12.0.7
+    image: nextcloud:13.0.2
     restart: always
     volumes:
       - ./www:/var/www/html
